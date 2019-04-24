@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>SeCoGen</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-3">SeCoGen</h1>
+        <p class="lead">A Service Code Generator tool</p>
+        <hr class="my-2">
+        <div class="form-group">
+            <label for="txtSearch">Search</label>
+            <input type="text" class="form-control" name="" id="txtSearch" aria-describedby="helpId" placeholder="">
+        </div>
+        <p class="lead">
+            <button id="btnSearch" class="btn btn-success">search APIs</button>
+        </p>
+        <hr class="my-2">
+        <table class="table table-sm"></table>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDA10db6wDYGpwOPLsVyaDMGDGzM1IGow4",
+            authDomain: "secogen-ac9b3.firebaseapp.com",
+            databaseURL: "https://secogen-ac9b3.firebaseio.com",
+            projectId: "secogen-ac9b3",
+            storageBucket: "secogen-ac9b3.appspot.com",
+            messagingSenderId: "819860794624"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="index.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
