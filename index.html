@@ -19,13 +19,41 @@
         <hr class="my-2">
         <div class="form-group">
             <label for="txtSearch">Search</label>
-            <input type="text" class="form-control" name="" id="txtSearch" aria-describedby="helpId" placeholder="">
+            <input type="text" class="form-control" value="animals" id="txtSearch" aria-describedby="helpId"
+                placeholder="">
         </div>
         <p class="lead">
             <button id="btnSearch" class="btn btn-success">search APIs</button>
         </p>
         <hr class="my-2">
-        <table class="table table-sm"></table>
+        <table id="tblApis" class="table table-sm"></table>
+        <br>
+        <table id="tblEndpoints" class="table table-sm"></table>
+        <br>
+        <table id="tblLanguages" class="table table-sm" style="visibility: hidden">
+            <thead class="thead-dark">
+                <tr>
+                    <th colspan="3">3. Select Language</th>
+                </tr>
+            </thead>
+            <tr>
+                <th>Request code</th>
+                <th></th>
+                <th>Response</th>
+            </tr>
+            <tr>
+                <td>
+                    <textarea id="txtRequestCode" name="" id="" cols="100" rows="10"></textarea>
+                </td>
+                <td>
+                    <button id="btnRun" class="btn btn-info">run code</button>
+                    <button id="btnSet" class="btn btn-success">set language</button>
+                </td>
+                <td>
+                    <textarea id="txtResponse" name="" id="" cols="100" rows="10"></textarea>
+                </td>
+            </tr>
+        </table>
 
     </div>
     <!-- Optional JavaScript -->
